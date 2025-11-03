@@ -1,0 +1,10 @@
+Superior Predictive Accuracy : Compared to traditional models (e.g.,
+Andrews' equation or thermodynamic models), BNNs demonstrate higher
+accuracy across diverse steel grades, as validated against experimental
+data.
+Model Setup:
+Define function:
+              
+                        Ms =f(W,W   , W   ,W   ,..., W) .C Mn Ni Cr Si
+ Modeled using a neural network:
+                       Ms=f(x ; w)‘›

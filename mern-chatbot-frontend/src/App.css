@@ -1,0 +1,155 @@
+/* Basic Reset */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html, body, #root {
+    height: 100%;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    background-color: #f0f2f5;
+    color: #333;
+}
+
+.app-container {
+    display: flex;
+    flex-direction: column;
+    /* MODIFIED: Removed max-width and margin auto */
+    height: 100vh; /* Takes full viewport height */
+    width: 100vw;  /* Takes full viewport width */
+    background-color: #fff;
+    /* MODIFIED: Removed shadow and border */
+}
+
+.app-header {
+    padding: 1rem;
+    background-color: #4a90e2;
+    color: white;
+    /* NEW: Use flex to align items */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-shrink: 0; /* Prevents header from shrinking */
+}
+
+/* NEW: Group title and upload */
+.app-header-left {
+    display: flex;
+    align-items: center;
+}
+
+.app-header h1 {
+    margin: 0;
+    margin-right: 2rem;
+}
+
+.upload-section {
+    display: flex;
+    align-items: center;
+}
+
+.upload-section label {
+    font-weight: bold;
+    margin-right: 0.5rem;
+}
+
+.upload-section input {
+    color: white;
+}
+
+.upload-status {
+    font-size: 0.9rem;
+    margin-left: 1rem;
+    color: #f0f0f0;
+}
+
+/* NEW: Logout Button Style */
+.logout-button {
+    border: none;
+    background: #e63946;
+    color: white;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.logout-button:hover {
+    background: #d02b39;
+}
+
+
+/* ... (rest of .chat-window, .message-list, .message, .chat-input are unchanged) ... */
+
+.chat-window {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.message-list {
+    flex-grow: 1;
+    padding: 1rem;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.message {
+    padding: 0.75rem 1rem;
+    border-radius: 18px;
+    max-width: 80%;
+    word-wrap: break-word;
+    line-height: 1.4;
+}
+
+.message.user {
+    background-color: #0084ff;
+    color: white;
+    align-self: flex-end;
+    border-bottom-right-radius: 4px;
+}
+
+.message.assistant {
+    background-color: #e4e6eb;
+    color: #050505;
+    align-self: flex-start;
+    border-bottom-left-radius: 4px;
+}
+
+.chat-input {
+    display: flex;
+    padding: 1rem;
+    border-top: 1px solid #ddd;
+    background-color: #f9f9f9;
+    flex-shrink: 0; /* Prevents input from shrinking */
+}
+
+.chat-input input {
+    flex-grow: 1;
+    border: 1px solid #ccc;
+    border-radius: 18px;
+    padding: 0.75rem 1rem;
+    font-size: 1rem;
+}
+
+.chat-input button {
+    border: none;
+    background-color: #0084ff;
+    color: white;
+    border-radius: 18px;
+    padding: 0 1.25rem;
+    margin-left: 0.5rem;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.chat-input button:hover {
+    background-color: #0073e6;
+}
