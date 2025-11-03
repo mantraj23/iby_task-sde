@@ -131,3 +131,12 @@ You must start all three services in **three separate terminals**. The order mat
 3.  Vite will give you a local URL. Open `http://localhost:5173` in your browser.
 
 You can now register a new account, log in, upload PDFs, and start chatting!
+
+
+## 🧠 Architecture Diagram
+
+![MERN + Python RAG PDF Chatbot Architecture](./assets/architecture.png)
+
+## 🎥 Demo Video
+
+[![Watch the video](https://img.youtube.com/vi/<YOUTUBE_VIDEO_ID>/0.jpg)](https://youtu.be/PjsGivjDktI)
