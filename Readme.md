@@ -1,3 +1,8 @@
+Name - Mantra Jain
+University - IIT Kanpur
+Department - Material Science Engineering
+
+
 # MERN + Python RAG PDF Chatbot
 
 This is a full-stack AI chatbot application. It allows users to create an account, log in, upload their own PDF documents, and have a conversation with an AI about the content of those documents.
